@@ -1,5 +1,6 @@
-/*
+'''
 Sorting three numbers: [PSEUDOCODES]
+
 1. Compare pairwise
 def func(x,y,z):
     if x>y:
@@ -16,23 +17,7 @@ def func(x,y,x):
     largest = max(x,y,z)
     middle = (x+y+z) - smallest - largest
     return smallest,middle,largest
-*/
+'''
 
-#include <bits/stdc++.h>
-using namespace std;
-#define ll long long
-#define ull unsigned long long
-#define lld long long double
+a, b, c = map(int, input().split())
 
-void FAST_IO() {
-    ios_base::sync_with_stdio(NULL);
-    cin.tie(0);
-    cout.tie(0);
-}
-
-int main() {
-    FAST_IO();
-    ll a,b,c; cin>>a>>b>>c;
-    
-    return 0;
-}
