@@ -20,4 +20,8 @@ def func(x,y,x):
 '''
 
 a, b, c = map(int, input().split())
-
+sum = (a + b + c)
+smallest = min(a,b,c)
+largest = max(a,b,c)
+middle = sum - smallest - largest
+print("{} {} {}".format(smallest, middle, largest))
