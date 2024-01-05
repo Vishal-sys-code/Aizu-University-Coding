@@ -2,8 +2,9 @@ import sys
 import os
 
 a,b,c = map(int, input().split())
+count = 0
 
-for i in range(a,b):
+for i in range(a,b+1):
     if c%i == 0:
         count = count+1
 
