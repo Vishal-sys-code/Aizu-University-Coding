@@ -5,5 +5,6 @@ public class ITP1_2_B {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         System.out.println(a*a*a);
+        sc.close();
     }  
 }
