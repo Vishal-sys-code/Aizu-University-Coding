@@ -5,7 +5,7 @@ public class ITP1_3_C {
         int a = sc.nextInt();
         int b = sc.nextInt();
         if(a == 0 && b == 0) {
-            break;
+            return;
         }
         else if(a>b){
             System.out.println(b + " " + a);
@@ -16,3 +16,5 @@ public class ITP1_3_C {
         sc.close();
     }
 }
+
+// wno: gdwoe/00077/23-24
