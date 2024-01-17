@@ -13,6 +13,7 @@ void FAST_IO() {
 int main() {
     FAST_IO();
     ll a,b,c; cin>>a>>b>>c;
+    // if b is greater than a and c [as per the problem statement says that]
     if(b>a && b<c){
         cout << "Yes" << endl;
     }
