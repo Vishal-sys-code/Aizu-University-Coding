@@ -10,6 +10,14 @@ void FAST_IO() {
     cout.tie(0);
 }
 
+/*
+Algorithm(H,M,S):
+1. Findign the hour. So, hour = seconds/3600;
+2. then we will go for finding the remainder part which came in the hour so s%3600 => now the remainder will play the major part to find the minute and the seconds
+3. then finding minute = remainder/60;
+4. then for seconds = remainder%60;
+*/
+
 int main() {
     FAST_IO();
     ll s; cin>>s;
