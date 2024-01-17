@@ -10,6 +10,16 @@ void FAST_IO() {
     cout.tie(0);
 }
 
+/*
+Algorithm():
+Checking the conditions [x:Width & y:Height]
+1. x>=radius and x<=(Width-radius)
+2. y>=radius and y<=(Height-radius)
+
+if these both statements are TRUE: print [YES]
+else: print [NO]
+*/
+
 int main() {
     FAST_IO();
     ll W,H,x,y,r;
