@@ -3,6 +3,7 @@ using namespace std;
 #define ll long long
 #define ull unsigned long long
 #define ld long double
+const double PI = 3.14159265359;
 
 void FAST_IO() {
     ios_base::sync_with_stdio(NULL);
@@ -12,10 +13,10 @@ void FAST_IO() {
 
 int main() {
     FAST_IO();
-    int a,b; cin>>a>>b;
-    int d = (a/b);
-    int r = (a%b);
-    double f = static_cast<double> (a)/ static_cast<double> (b);
-    cout << d << " " << r << "" << fixed << setprecision(5) << " " << f;
+    double r; cin>>r;
+    double area, circumference;
+    area = PI*r*r;
+    circumference = 2*PI*r;
+    cout << fixed << setprecision(6) << area << " " << fixed << setprecision(6) << circumference << endl;
     return 0;
 }
