@@ -13,6 +13,8 @@ void FAST_IO() {
 
 int main() {
     FAST_IO();
+    int a,b; char op;
+    cin >> a >> op >> b;
     
     return 0;
 }
