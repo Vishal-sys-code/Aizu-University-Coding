@@ -11,10 +11,31 @@ void FAST_IO() {
     cout.tie(0);
 }
 
+int calculate(int a, int b, char op){
+    switch (op) {
+        case '+':
+            return a + b;
+        case '-':
+            return a - b;
+        case '*':
+            return a * b;
+        case '/':
+            return a / b;
+        default:
+            return -1;
+    }
+}
+
 int main() {
     FAST_IO();
     int a,b; char op;
-    cin >> a >> op >> b;
-    
+    while(true){
+        cin >> a >> op >> b;
+        if (op == '?') {
+            break;
+        }
+        int result = calculate(a, b, op);
+        cout << result << endl;
+    }
     return 0;
 }
