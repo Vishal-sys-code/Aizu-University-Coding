@@ -17,7 +17,7 @@ public class ITP1_4_C {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while(true){
-            String inputStr = scanner.nextLine().trim();
+            String inputStr = sc.nextLine().trim();
             if(inputStr.equals("?")){
                 break;
             }
