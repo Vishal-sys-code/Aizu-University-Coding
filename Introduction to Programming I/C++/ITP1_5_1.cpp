@@ -22,6 +22,19 @@ h = 3 & w = 4
 ####
 */
 
+/*
+procedure PrintRectangle(height, width):
+    for i from 0 to height - 1:
+        // Loop through each row of the rectangle
+        for j from 0 to width - 1:
+            // Loop through each column of the rectangle
+            print '#'
+        end for
+        print newline
+    end for
+    print newline
+*/
+
 int main(){
     FAST_IO();
     int h,w;
