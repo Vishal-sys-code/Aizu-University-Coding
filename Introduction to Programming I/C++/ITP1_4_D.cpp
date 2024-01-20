@@ -42,5 +42,24 @@ int main() {
     cout << min << " " << max << " "  << sum << endl;
     --------------------------------------------------
     */
+    // Using O(N) operations
+    ll n; cin>>n;
+    ll arr[n]; ll sum = 0;
+     for(ll i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    ll min = arr[0]; ll max = arr[0];
+    for(ll i=0;i<n;i++){
+        sum+=arr[i];
+    }
+    for(ll i=1;i<n;i++){
+        if(min > arr[i]){
+            min = arr[i];
+        }
+        if(max < arr[i]){
+            max = arr[i];
+        }
+    }
+    cout << min << " " << max << " " << sum << endl;
     return 0;
 }
