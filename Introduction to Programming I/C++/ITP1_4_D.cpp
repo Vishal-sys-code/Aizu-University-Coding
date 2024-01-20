@@ -10,9 +10,20 @@ void FAST_IO() {
     cin.tie(0);
     cout.tie(0);
 }
+/*
+ALGORITHM():
+1. Take it in the array, and also take out the sum of the whole array
+2. After the sum, we need to sort the array by using the STL one in log(N) Time Complexity
+3. If the whole array is sorted then the minimum element is in the 0th index and the maximum element is in the (n-1)th index
+    minimum => 0th index
+    maximum => (n-1)th index
+*/
 
 int main() {
     FAST_IO();
+    /*
+    USING SORTING => O(N)+O(log(N))+O(N) => O(2N+log(N)) => O(N+log(N))
+    --------------------------------------------------
     ll n; cin>>n;
     ll arr[n];
     ll sum = 0; ll min = 0; ll max = 0;
@@ -28,5 +39,7 @@ int main() {
         min = arr[0];
     }
     cout << min << " " << max << " "  << sum << endl;
+    --------------------------------------------------
+    */
     return 0;
 }
