@@ -10,8 +10,9 @@ void FAST_IO() {
     cin.tie(0);
     cout.tie(0);
 }
+
 /*
-ALGORITHM():
+ALGORITHM_BRUTE_FORCE():
 1. Take it in the array, and also take out the sum of the whole array
 2. After the sum, we need to sort the array by using the STL one in log(N) Time Complexity
 3. If the whole array is sorted then the minimum element is in the 0th index and the maximum element is in the (n-1)th index
