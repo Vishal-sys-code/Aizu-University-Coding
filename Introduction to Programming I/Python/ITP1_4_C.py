@@ -17,4 +17,7 @@ while True:
     a,op,b = input_str.split()
     a,b = int(a), int(b)
     result = calculate(a,b,op)
-    print(result)
+    if(result == -1):
+        break
+    else: 
+        print(result)
