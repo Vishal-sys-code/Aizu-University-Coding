@@ -24,19 +24,19 @@ h = 3 & w = 4
 
 int main(){
     FAST_IO();
-    int w,h;
-    int row = w;
-    int column = h;
-    while(cin>>row>>column){
-        if(w==0 && h==0) break;
+    int h,w;
+    while(true){
+        cin>>h>>w;
+        if(w==0 && h==0) {break;}
         else{
-            for(int i=0;i<=column;i++){
-                for(int j=0;j<row;j++){
+            for(int i=0;i<=h-1;++i){
+                for(int j=0;j<w;++j){
                     cout << "#";
                 }
                 cout << endl;
             }
         }
+        cout << endl;
     }
     return 0;
 }
